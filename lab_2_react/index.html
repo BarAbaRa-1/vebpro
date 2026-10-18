@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> KRIStina228 </title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Христина Лукащик</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Христина Лукащик</h1>
+        <p>Студентка 2 курсу | Кібербезпека | Група КБ-203</p>
+        <p>Email: <a href="mailto:khrystyna.lukashchyk@lpnu.ua">khrystyna.lukashchyk@lpnu.ua</a></p>
+    </header>
+
+    <!-- Inline CSS -->
+    <main style="max-width: 1000px;">
+        <section id="about-card">
+            <h2>Про мене</h2>
+            <p>Прагну розвитку. Вмію організовувати роботу свою та команди. Хочу підвищувати рівень системної безпеки.</p>
+        </section>
+
+        <section class="card">
+            <h2>Освіта</h2>
+            <p><strong>Львівська політехніка</strong> (2025–present)</p>
+            <p><strong>Спеціальність:</strong> Кібербезпека</p>
+            <br>
+            <p><strong>Курси:</strong></p>
+            <ul>
+                <li>Основи захисту інформації</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Навички та інтереси</h2>
+            <ul>
+                <li>Python, C++, SQL, Git</li>
+            </ul>
+            <p style="margin-top: 10px; font-weight: bold;">Інтереси:</p>
+            <ul>
+                <li>Мережева безпека</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Досвід</h2>
+            <ul>
+                <li>Розробка аудиту для компанії LAY'S</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Контакти</h2>
+            <p>Email: <a href="mailto:khrystyna.lukashchyk@lpnu.ua">khrystyna.lukashchyk@lpnu.ua</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Христина Лукащик | Група КБ-203</p>
+    </footer>
+</body>
 </html>
