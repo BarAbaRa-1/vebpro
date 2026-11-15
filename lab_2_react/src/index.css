@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+/* щоб клас dark вмикав темну тему (а не налаштування системи) */
+@custom-variant dark (&:where(.dark, .dark *));

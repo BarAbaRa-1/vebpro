@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Христина Лукащик</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Христина Лукащик</h1>
+        <p>Студентка 2 курсу | Кібербезпека | Група КБ-203</p>
+        <p>Email: <a href="mailto:khrystyna.lukashchyk@lpnu.ua">khrystyna.lukashchyk@lpnu.ua</a></p>
+  
+        <button id="theme-btn">Змінити тему</button>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Про мене</h2>
+            <p>Прагну розвитку. Швидко вчусь. Вмію організовувати роботу свою та команди. Відповідальна.</p>
+        </section>
+
+        <section class="card">
+            <h2>Освіта</h2>
+            <p><strong>Львівська політехніка:</strong> Кібербезпека, 2 курс</p>
+        </section>
+
+        <section class="card">
+            <h2>Мої навички</h2>
+            <ul>
+                <li>Python, C#, JavaScript, HTML, CSS</li>
+                <li>HTML та основи React</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Досвід роботи та проєктна діяльність</h2>
+            <p>
+                Досвіду роботи за спеціальністю "Кібербезпека" немає.
+                Проте на курсі я створила аудит інформаційної безпеки для компанії LAYʼS.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Контакти</h2>
+            <p>Email: <a href="mailto:khrystyna.lukashchyk@lpnu.ua">khrystyna.lukashchyk@lpnu.ua</a></p>
+        </section>
+
+
+        <section class="card reviews">
+            <h2>Відгуки попередніх роботодавців</h2>
+            <div id="reviews">Завантаження...</div>
+        </section>
+    </main>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <button id="close-btn" class="close-btn">X</button>
+            <h2>Зворотний зв'язок</h2>
+            <form action="https://formspree.io/f/xjyyadgz" method="POST">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Христина Лукащик | Група КБ-203</p>
+        <h3>Інформація з localStorage:</h3>
+        <div id="info"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
